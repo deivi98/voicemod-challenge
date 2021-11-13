@@ -66,6 +66,10 @@ Implementación simple de una API CRUD en Node.js utilizando
 2. API will be listening on `http://localhost:5001/graphql`
 3. You can also access to GraphQL playground on browser
 
+NOTE: Session cookies are created automatically. Postman will work out of the box, but for GraphQL playground make sure you open preferences tab and you add the following property to make it work
+
+    "request.credentials": "include"
+
 ## Authors
 
 * **David González** - [deivi98](https://github.com/deivi98)
