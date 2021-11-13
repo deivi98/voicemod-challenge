@@ -63,7 +63,7 @@ async function main() {
   const port = process.env.PORT
 
   app.listen(port, () => {
-    console.log(`Server is listening on http://localhost:${port}/graphql`)
+    console.log(`API is listening on http://localhost:${port}/graphql`)
   })
 }
 

@@ -26,18 +26,25 @@ Implementación simple de una API CRUD en Node.js utilizando
     ├── graphql
     │   ├── resolvers
     │   │   └── user
-    │   │       └── index.ts
-    │   └── types
-    │       └── user
-    │           ├── CreateUserInput.ts
-    │           ├── LoginUserInput.ts
-    │           └── UpdateUserInput.ts
+    │   │       ├── query
+    │   │       │   └── <ExampleQuery>.ts
+    │   │       │
+    │   │       └── mutation
+    │   │           └── <ExampleMutation>.ts
+    │   ├── types
+    │   │   └── user
+    │   │       └── <Example>Input.ts
+    │   │
+    │   ├── Context.ts
+    │   │
+    │   └── utils
+    │       └── error
+    │           └── <Example>Error.ts
     │
     ├── database
     │   └── entity
     │       └── User.ts
     │    
-    ├── context.ts
     ├── generateSchema.ts
     └── index.ts
 ```
@@ -56,6 +63,8 @@ Implementación simple de una API CRUD en Node.js utilizando
 ## Steps to deploy
 
 1. Run `docker-compose up`
+2. API will be listening on `http://localhost:5001/graphql`
+3. You can also access to GraphQL playground on browser
 
 ## Authors
 
