@@ -1,5 +1,13 @@
 # Voicemod Interview Coding Challenge
-Implementación simple de una API CRUD en Node.js utilizando Express, Apollo, GraphQL, TypeGraphQL, TypeORM, Redis, Docker y Postgres.
+Implementación simple de una API CRUD en Node.js utilizando
+* Express
+* Apollo
+* GraphQL
+* TypeGraphQL
+* TypeORM
+* Redis
+* Docker
+* Postgres
 
 ## Project Structure
 ```
