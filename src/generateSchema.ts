@@ -1,13 +1,15 @@
 import { buildSchema } from "type-graphql"
 import { GraphQLSchema } from "graphql"
-import { UserResolver } from "./graphql/resolvers/user"
 
 export async function generateSchema(): Promise<GraphQLSchema> {
+
   try {
     const schema = await buildSchema({
-      resolvers: [
-        UserResolver
-      ],
+      resolvers: [__dirname + "/graphql/resolvers/**/*.ts"],
+      emitSchemaFile: {
+        path: __dirname + "/../schema.graphql",
+        commentDescriptions: true,
+      },
       validate: false,
     })
 
@@ -16,4 +18,5 @@ export async function generateSchema(): Promise<GraphQLSchema> {
     console.error(e)
     throw e
   }
+
 }

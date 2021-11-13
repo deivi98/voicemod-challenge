@@ -8,7 +8,7 @@ import session from 'express-session'
 import connectRedis from 'connect-redis'
 import express from "express"
 import { User } from "./database/entity/User"
-import { Context } from "./graphql/context"
+import { Context } from "./graphql/Context"
 
 dotenv.config()
 async function main() {

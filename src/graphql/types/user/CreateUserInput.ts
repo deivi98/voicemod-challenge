@@ -23,4 +23,5 @@ export class CreateUserInput {
 
   @Field({ nullable: true })
   postalCode?: number
+
 }

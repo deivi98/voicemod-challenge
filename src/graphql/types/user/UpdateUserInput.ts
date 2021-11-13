@@ -22,4 +22,5 @@ export class UpdateUserInput {
 
   @Field({ nullable: true })
   postalCode?: number
+
 }
