@@ -1,5 +1,8 @@
 import { InputType, Field } from "type-graphql"
 
+/**
+ * Defines data input when a user registers
+ */
 @InputType()
 export class CreateUserInput {
 

@@ -1,5 +1,8 @@
 import { InputType, Field } from "type-graphql"
 
+/**
+ * Defines input for updating profiles
+ */
 @InputType()
 export class UpdateUserInput {
   @Field({ nullable: true })

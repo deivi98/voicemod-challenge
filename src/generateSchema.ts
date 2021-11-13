@@ -1,6 +1,11 @@
 import { buildSchema } from "type-graphql"
 import { GraphQLSchema } from "graphql"
 
+/**
+ * Reads all project GraphQL resolvers and generates
+ * GraphQL schema out of them using TypeGraphQL
+ * @returns Promise<GraphQLSchema>
+ */
 export async function generateSchema(): Promise<GraphQLSchema> {
 
   try {

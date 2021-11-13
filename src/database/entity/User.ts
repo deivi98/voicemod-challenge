@@ -1,9 +1,14 @@
 import { Entity, BaseEntity, PrimaryGeneratedColumn, Column } from "typeorm"
 import { ObjectType, Field, ID } from "type-graphql"
 
+/**
+ * User model, it is used by both TypeORM to build Postgres tables
+ * and TypeGraphQL to generate the schema
+ */
 @Entity()
 @ObjectType()
 export class User extends BaseEntity {
+
   @Field(() => ID)
   @PrimaryGeneratedColumn()
   id: string
@@ -35,4 +40,5 @@ export class User extends BaseEntity {
   @Field(() => Number, { nullable: true })
   @Column({ nullable: true })
   postalCode?: number
+  
 }
