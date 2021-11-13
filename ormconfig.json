@@ -1,0 +1,51 @@
+[
+   {
+      "type": "postgres",
+      "host": "postgres",
+      "port": 5432,    
+      "username": "docker",    
+      "password": "docker",    
+      "database": "voicemod-challenge-db",
+      "synchronize": true,
+      "logging": false,
+      "entities": [
+         "src/database/entity/**/*.ts"
+      ],
+      "migrations": [
+         "src/database/migration/**/*.ts"
+      ],
+      "subscribers": [
+         "src/subscriber/**/*.ts"
+      ],
+      "cli": {
+         "entitiesDir": "src/database/entity",
+         "migrationsDir": "src/database/migration",
+         "subscribersDir": "src/database/subscriber"
+      }
+   }, 
+   {
+      "name": "development",
+      "type": "postgres",
+      "host": "localhost",
+      "port": 35432,    
+      "username": "docker",    
+      "password": "docker",    
+      "database": "voicemod-challenge-db",
+      "synchronize": false,
+      "logging": false,
+      "entities": [
+         "src/database/entity/**/*.ts"
+      ],
+      "migrations": [
+         "src/database/migration/**/*.ts"
+      ],
+      "subscribers": [
+         "src/subscriber/**/*.ts"
+      ],
+      "cli": {
+         "entitiesDir": "src/database/entity",
+         "migrationsDir": "src/database/migration",
+         "subscribersDir": "src/database/subscriber"
+      }
+   }
+ ]
