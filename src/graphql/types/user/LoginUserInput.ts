@@ -1,11 +1,11 @@
-import { InputType, Field } from "type-graphql";
+import { InputType, Field } from "type-graphql"
 
 @InputType()
 export class LoginUserInput {
 
   @Field()
-  email: string;
+  email: string
 
   @Field()
-  password: string;
+  password: string
 }

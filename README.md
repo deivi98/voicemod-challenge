@@ -26,7 +26,7 @@ Implementación simple de una API CRUD en Node.js utilizando
     ├── graphql
     │   ├── resolvers
     │   │   └── user
-    │   │       └── User.ts
+    │   │       └── index.ts
     │   └── types
     │       └── user
     │           ├── CreateUserInput.ts
@@ -35,7 +35,7 @@ Implementación simple de una API CRUD en Node.js utilizando
     │
     ├── database
     │   └── entity
-    │       └── <Entity>.ts
+    │       └── User.ts
     │    
     ├── context.ts
     ├── generateSchema.ts

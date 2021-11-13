@@ -1,25 +1,25 @@
-import { InputType, Field } from "type-graphql";
+import { InputType, Field } from "type-graphql"
 
 @InputType()
 export class UpdateUserInput {
   @Field({ nullable: true })
-  email?: string;
+  email?: string
 
   @Field({ nullable: true })
-  password?: string;
+  password?: string
 
   @Field({ nullable: true })
-  name?: string;
+  name?: string
 
   @Field({ nullable: true })
-  surnames?: string;
+  surnames?: string
 
   @Field({ nullable: true })
-  country?: string;
+  country?: string
 
   @Field({ nullable: true })
-  phone?: string;
+  phone?: string
 
   @Field({ nullable: true })
-  postalCode?: number;
+  postalCode?: number
 }

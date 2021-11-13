@@ -1,6 +1,6 @@
-import { buildSchema } from "type-graphql";
-import { GraphQLSchema } from "graphql";
-import { UserResolver } from "./graphql/resolvers/user";
+import { buildSchema } from "type-graphql"
+import { GraphQLSchema } from "graphql"
+import { UserResolver } from "./graphql/resolvers/user"
 
 export async function generateSchema(): Promise<GraphQLSchema> {
   try {
@@ -9,11 +9,11 @@ export async function generateSchema(): Promise<GraphQLSchema> {
         UserResolver
       ],
       validate: false,
-    });
+    })
 
-    return schema;
+    return schema
   } catch (e) {
-    console.error(e);
-    throw e;
+    console.error(e)
+    throw e
   }
 }
