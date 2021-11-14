@@ -60,7 +60,7 @@ Implementación simple de una API CRUD en Node.js utilizando
 2. `cd voicemod-challenge`
 3. Run `docker-compose up`
 4. Wait a couple of minutes for docker containers to start up
-5. API will be listening on `http://localhost:5001/graphql`
+5. API will be listening on `http://localhost:5000/graphql`
 6. You can also access to GraphQL playground on browser
 7. Postman Collections file is available in docs/
 
