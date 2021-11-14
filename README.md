@@ -54,21 +54,25 @@ Implementación simple de una API CRUD en Node.js utilizando
 1. Install docker
 2. Install docker-compose
 
-## Development steps
-
-1. Install Node +14
-2. Install NPM
-3. Run `npm i`
-
 ## Steps to deploy
 
-1. Run `docker-compose up`
-2. API will be listening on `http://localhost:5001/graphql`
-3. You can also access to GraphQL playground on browser
+1. Clone this repo `git clone https://github.com/deivi98/voicemod-challenge.git`
+2. `cd voicemod-challenge`
+3. Run `docker-compose up`
+4. Wait a couple of minutes for docker containers to start up
+5. API will be listening on `http://localhost:5001/graphql`
+6. You can also access to GraphQL playground on browser
+7. Postman Collections file is available in docs/
 
 NOTE: Session cookies are created automatically. Postman will work out of the box, but for GraphQL playground make sure you open preferences tab and you add the following property to make it work
 
     "request.credentials": "include"
+
+## Development steps
+
+1. Install Node 16
+2. Install NPM
+3. Run `npm i`
 
 ## Authors
 
